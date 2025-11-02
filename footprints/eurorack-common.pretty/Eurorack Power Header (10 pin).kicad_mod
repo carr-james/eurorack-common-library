@@ -277,7 +277,7 @@
 		(uuid "9738c9ee-1da2-4829-95f4-a4b578099b5e")
 	)
 	(embedded_fonts no)
-	(model "C:\\SamacSys_PCB_Library\\KiCad\\SamacSys_Parts.3dshapes\\HIF3FC-10PA-2.54DSA_71_.stp"
+	(model "${KIPRJMOD}/../shared/3dmodels/PinHeader_Shrouded_02x05.step"
 		(offset
 			(xyz 0 0 0)
 		)
@@ -285,7 +285,7 @@
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -0 -0 -90)
 		)
 	)
 )

@@ -366,7 +366,7 @@
 		(uuid "01da7c06-4c7f-4ac1-8172-3d2e05cb3f4f")
 	)
 	(embedded_fonts no)
-	(model "${KICAD9_3DMODEL_DIR}/Package_SO.3dshapes/Texas_DYY0016A_TSOT-23-16_2x4.2mm_P0.5mm.step"
+	(model "${KIPRJMOD}/../shared/3dmodels/Texas_DYY0014A_TSOT-23-14_2x4.2mm_P0.5mm.step"
 		(offset
 			(xyz 0 0 0)
 		)
