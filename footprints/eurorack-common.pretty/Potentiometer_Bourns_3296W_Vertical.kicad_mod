@@ -1,0 +1,195 @@
+(footprint "Potentiometer_Bourns_3296W_Vertical"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Potentiometer, vertical, Bourns 3296W, https://www.bourns.com/pdfs/3296.pdf")
+	(tags "Potentiometer vertical Bourns 3296W")
+	(property "Reference" "REF**"
+		(at -2.54 -3.66 0)
+		(layer "F.SilkS")
+		(uuid "1e58d571-8d3c-475d-b070-80b2a76fe25c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Potentiometer_Bourns_3296W_Vertical"
+		(at -2.54 3.67 0)
+		(layer "F.Fab")
+		(uuid "97c349e4-14ba-4400-b879-2cb4f9658d00")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b6684248-f7d7-4787-b8d0-a5d3df71f9b8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "04948df4-d1a0-42a8-82c9-3fd2d15beae7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -7.415 -2.52)
+		(end 2.335 -2.52)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "66e034f7-3a38-4cbf-92a5-8a741a8b3f3a")
+	)
+	(fp_line
+		(start -7.415 2.53)
+		(end -7.415 -2.52)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b565b893-f411-49d7-85df-2b57e2268a55")
+	)
+	(fp_line
+		(start 2.335 -2.52)
+		(end 2.335 2.53)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a46e7fb5-9bb8-41f3-bcd4-8079a7086d88")
+	)
+	(fp_line
+		(start 2.335 2.53)
+		(end -7.415 2.53)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bc7c717c-00ad-4e75-bed4-d274c730c7c1")
+	)
+	(fp_rect
+		(start -7.56 -2.66)
+		(end 2.48 2.67)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "f4c8450a-7046-4741-a02e-19b4cbb3a6b8")
+	)
+	(fp_line
+		(start 1.652 0.32)
+		(end 0.125 1.847)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d03582e0-bd8d-4504-9d20-c5ed31abaef3")
+	)
+	(fp_line
+		(start 1.785 0.453)
+		(end 0.258 1.98)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b6171f55-dd8a-4ff4-9a85-5e5b2dd3979e")
+	)
+	(fp_rect
+		(start -7.305 -2.41)
+		(end 2.225 2.42)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "638a7417-18bb-4ea3-9cf3-f5fba57f5328")
+	)
+	(fp_circle
+		(center 0.955 1.15)
+		(end 2.05 1.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "32e1aeba-101b-4c50-9400-99101ac6d384")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -3.175 0.005 0)
+		(layer "F.Fab")
+		(uuid "3a56fe35-3e9b-44af-bd27-2f6be72a163a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.44 1.44)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "935b3358-9e46-48dd-8b13-73a4e56500e6")
+	)
+	(pad "2" thru_hole circle
+		(at -2.54 0)
+		(size 1.44 1.44)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e9d2aff5-238b-4532-b808-5278019e75c2")
+	)
+	(pad "3" thru_hole circle
+		(at -5.08 0)
+		(size 1.44 1.44)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7e5306f2-fbd6-4a4c-bd53-b53e72f2cea8")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Potentiometer_THT.3dshapes/Potentiometer_Bourns_3296W_Vertical.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
