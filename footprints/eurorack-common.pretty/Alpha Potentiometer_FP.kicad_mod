@@ -1,0 +1,142 @@
+(footprint "Alpha Potentiometer_FP"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "RD901F-40-15R1-B10K-00DL1-3")
+	(tags "Variable Resistor")
+	(property "Reference" "RV4"
+		(at 2.5 -5.4 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "54e330cb-b2bf-4a1b-ad73-ab72e6ffb74e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "100k"
+		(at 2.5 -5.4 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "48a55ae8-f4ee-4315-9e89-32dc96f2e171")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ccbeed86-68cb-47b1-b6e3-a739e0359a41")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a6dc46eb-91d3-4fa2-8539-0eccad2ade04")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_circle
+		(center 2.5 -7.61)
+		(end 6.05 -7.61)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "dbb88ad0-d80a-405c-b921-55b8497bd17d")
+	)
+	(fp_line
+		(start -0.6 1.5)
+		(end -0.6 1.5)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(layer "User.1")
+		(uuid "b8d54675-31f8-4868-844a-a7ee5fc20696")
+	)
+	(fp_line
+		(start -0.5 1.5)
+		(end -0.5 1.5)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(layer "User.1")
+		(uuid "79ea9d3f-498b-4fcb-bec8-dc07ebec4d80")
+	)
+	(fp_line
+		(start 2.5 -4.06)
+		(end 2.5 -11.16)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "User.1")
+		(uuid "92861e94-a177-4099-8134-ba121961e6c3")
+	)
+	(fp_line
+		(start 6.05 -7.61)
+		(end -1.05 -7.61)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "User.1")
+		(uuid "a9891529-2d1f-4d18-9809-c6d252a88d3e")
+	)
+	(fp_arc
+		(start -0.6 1.5)
+		(mid -0.55 1.45)
+		(end -0.5 1.5)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(layer "User.1")
+		(uuid "de55518a-f49a-4141-9fd1-cd8cd7ccf3cc")
+	)
+	(fp_arc
+		(start -0.5 1.5)
+		(mid -0.55 1.55)
+		(end -0.6 1.5)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(layer "User.1")
+		(uuid "7b52345b-11a5-4b1f-8b7c-8e58a95fc752")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/../shared/3dmodels/Alpha-Pot.step"
+		(offset
+			(xyz 2.5 7.5 -5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

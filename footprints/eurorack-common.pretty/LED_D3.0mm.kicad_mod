@@ -8,7 +8,7 @@
 	(property "Reference" "REF**"
 		(at 1.27 -2.96 0)
 		(layer "F.SilkS")
-		(uuid "983e74e6-9ea1-48f7-ace7-ac8e5713a274")
+		(uuid "04ce2821-9256-49c4-986c-492269abf0dc")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 	(property "Value" "LED_D3.0mm"
 		(at 1.27 2.96 0)
 		(layer "F.Fab")
-		(uuid "b7a5859c-86cc-405e-afc8-d476bf4bc698")
+		(uuid "f89f64fd-1dc2-48c6-b1d4-f0631905bde1")
 		(effects
 			(font
 				(size 1 1)
@@ -31,7 +31,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "e67bb97c-8ceb-4cda-a10f-566aba0d9d3c")
+		(uuid "cf3d193b-83fb-41c0-8356-d82af21c307b")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -43,7 +43,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "072103ab-568b-4e51-a464-4dd5c2799448")
+		(uuid "c44ca134-6edb-465f-9714-6a51502ee306")
 		(effects
 			(font
 				(size 1.27 1.27)
