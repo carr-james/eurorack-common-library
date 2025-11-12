@@ -390,15 +390,15 @@
 		(uuid "e6a46a80-d815-4f2d-8d2b-5d8484cb2984")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/../shared/3dmodels/Alpha-Pot.step"
+	(model "${KIPRJMOD}/../shared/3dmodels/Alpha-Pot.wrl"
 		(offset
-			(xyz 2.5 7.5 7)
+			(xyz 2.5 7.5 0)
 		)
 		(scale
-			(xyz 1 1 1)
+			(xyz 0.4 0.4 0.4)
 		)
 		(rotate
-			(xyz -0 -0 -0)
+			(xyz -90 -0 -0)
 		)
 	)
 )

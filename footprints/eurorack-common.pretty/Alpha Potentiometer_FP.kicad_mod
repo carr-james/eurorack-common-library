@@ -128,15 +128,16 @@
 		(uuid "7b52345b-11a5-4b1f-8b7c-8e58a95fc752")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/../shared/3dmodels/Alpha-Pot.step"
+	(model "${KIPRJMOD}/../shared/3dmodels/Alpha-Pot.wrl"
+		(hide yes)
 		(offset
-			(xyz 2.5 7.5 -5)
+			(xyz 2.5 7.5 -12)
 		)
 		(scale
-			(xyz 1 1 1)
+			(xyz 0.4 0.4 0.4)
 		)
 		(rotate
-			(xyz -0 -0 -0)
+			(xyz -90 -0 -0)
 		)
 	)
 )

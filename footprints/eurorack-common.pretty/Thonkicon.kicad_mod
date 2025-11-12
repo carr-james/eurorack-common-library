@@ -333,15 +333,15 @@
 		)
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/../shared/3dmodels/Thonkicon.step"
+	(model "${KIPRJMOD}/../shared/3dmodels/Thonkicon.wrl"
 		(offset
 			(xyz 0 -7.25 0)
 		)
 		(scale
-			(xyz 1 1 1)
+			(xyz 0.4 0.4 0.4)
 		)
 		(rotate
-			(xyz -0 -0 -180)
+			(xyz -90 -0 -180)
 		)
 	)
 )

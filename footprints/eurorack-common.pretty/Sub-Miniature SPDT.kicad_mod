@@ -99,15 +99,15 @@
 		(uuid "9a2a62b8-4936-4844-b50d-6e23f7e30556")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/../shared/3dmodels/Subminiture-SPDT.step"
+	(model "${KIPRJMOD}/../shared/3dmodels/Subminiture-SPDT.wrl"
 		(offset
 			(xyz 0 0 0)
 		)
 		(scale
-			(xyz 1 1 1)
+			(xyz 0.4 0.4 0.4)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -90 -0 -0)
 		)
 	)
 )

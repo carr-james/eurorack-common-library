@@ -148,15 +148,15 @@
 		)
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/../shared/3dmodels/Potentiometer_Bourns_3296W_Horizontal.step"
+	(model "${KIPRJMOD}/../shared/3dmodels/Potentiometer_Bourns_3296W_Horizontal.wrl"
 		(offset
 			(xyz 0 0.78 2.5)
 		)
 		(scale
-			(xyz 1 1 1)
+			(xyz 0.4 0.4 0.4)
 		)
 		(rotate
-			(xyz 90 -0 -0)
+			(xyz -0 -0 -0)
 		)
 	)
 )

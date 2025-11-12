@@ -88,6 +88,7 @@
 	)
 	(embedded_fonts no)
 	(model "${KICAD9_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.step"
+		(hide yes)
 		(offset
 			(xyz 0 0 -6)
 		)

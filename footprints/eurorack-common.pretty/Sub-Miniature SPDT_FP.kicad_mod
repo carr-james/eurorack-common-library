@@ -78,6 +78,7 @@
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/../shared/3dmodels/Subminiture-SPDT.step"
+		(hide yes)
 		(offset
 			(xyz 0 0 -11)
 		)

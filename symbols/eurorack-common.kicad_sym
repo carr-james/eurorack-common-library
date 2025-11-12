@@ -380,7 +380,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Eurorack Common:C_Radial_D5.0mm_H11.0mm_P2.00mm"
+		(property "Footprint" "Eurorack Common:CP_Radial_D5.0mm_H11.0mm_P2.00mm"
 			(at 0.9652 -3.81 0)
 			(effects
 				(font

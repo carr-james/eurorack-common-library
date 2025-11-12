@@ -89,6 +89,7 @@
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/../shared/3dmodels/Thonkicon.step"
+		(hide yes)
 		(offset
 			(xyz 0 -7.25 -12)
 		)

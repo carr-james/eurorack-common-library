@@ -366,15 +366,15 @@
 		(uuid "01da7c06-4c7f-4ac1-8172-3d2e05cb3f4f")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/../shared/3dmodels/Texas_DYY0014A_TSOT-23-14_2x4.2mm_P0.5mm.step"
+	(model "${KIPRJMOD}/../shared/3dmodels/Texas_DYY0014A_TSOT-23-14_2x4.2mm_P0.5mm.wrl"
 		(offset
 			(xyz 0 0 0)
 		)
 		(scale
-			(xyz 1 1 1)
+			(xyz 0.4 0.4 0.4)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -90 -0 -0)
 		)
 	)
 )

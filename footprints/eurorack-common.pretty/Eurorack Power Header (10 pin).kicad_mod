@@ -277,15 +277,15 @@
 		(uuid "9738c9ee-1da2-4829-95f4-a4b578099b5e")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/../shared/3dmodels/PinHeader_Shrouded_02x05.step"
+	(model "${KIPRJMOD}/../shared/3dmodels/PinHeader_Shrouded_02x05.wrl"
 		(offset
 			(xyz 0 0 0)
 		)
 		(scale
-			(xyz 1 1 1)
+			(xyz 0.4 0.4 0.4)
 		)
 		(rotate
-			(xyz -0 -0 -90)
+			(xyz -90 -0 -90)
 		)
 	)
 )
