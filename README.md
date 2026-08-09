@@ -38,6 +38,34 @@ tables at it:
 Paths stay project-relative, so a project works on any machine with no global
 KiCad configuration.
 
+## 3D models: why footprints are vendored
+
+Many footprints here duplicate a stock KiCad footprint. This is deliberate. Do
+not replace them with the stock version.
+
+KiCad 10 ships 7245 STEP models and no WRL models. STEP holds geometry but no
+colour. A footprint that points at a stock model therefore renders grey, and
+KiBot reports `(W174) Missing WRL 3D model for ... colors`.
+
+Each footprint here points at a WRL file in `3dmodels/` instead:
+
+```
+(model "${KIPRJMOD}/../shared/3dmodels/<name>.wrl")
+```
+
+This gives two things:
+
+- Colour in `render_3d` and Blender output.
+- A project-relative path. The model resolves in CI containers and on any
+  machine. Stock footprints use `${KICAD10_3DMODEL_DIR}`, which fails when the
+  variable is absent or names an older KiCad version.
+
+When you add a part, add its footprint here and give it a WRL model. A STEP
+file alone renders without colour.
+
+Two models have no WRL pair yet: `LED_D3.0mm_Extended10mm` and
+`LED_D3.0mm_Extended5mm`. They render without colour.
+
 ## Design rules
 
 `design-rules/house-mill.kicad_dru` holds the default rules. They target the
