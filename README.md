@@ -63,8 +63,30 @@ This gives two things:
 When you add a part, add its footprint here and give it a WRL model. A STEP
 file alone renders without colour.
 
-Two models have no WRL pair yet: `LED_D3.0mm_Extended10mm` and
-`LED_D3.0mm_Extended5mm`. They render without colour.
+### How to make a WRL model
+
+Route 1 — KiCad ships a STEP for the part. Convert it with **kicad StepUp**, a
+FreeCAD workbench. StepUp writes the vertices at KiCad scale, so the footprint
+keeps `(scale 1 1 1)`. 16 models here came this way.
+
+Route 2 — KiCad ships nothing. Find a model from the vendor or a CAD library,
+then convert it to VRML. 7 models here came this way, all Eurorack or vendor
+parts: the Alpha pot, Thonkicon jack, shrouded header, SPDT switch, both Bourns
+trimmers, and the TI TSOT package. These arrive in mm, so the footprint scales
+them down.
+
+Route 3 — you need a variant. Modify the model in FreeCAD first, then convert.
+`Potentiometer_Bourns_3296W_Horizontal` is one: the legs are bent 90 degrees so
+the trimmer lies flat.
+
+Scale down by **0.3937** (1/2.54), not 0.4. The 8 footprints that use 0.4 render
+1.6 percent oversize. This affects renders only, not fabrication.
+
+### Known gaps
+
+- `LED_D3.0mm_Extended10mm` and `LED_D3.0mm_Extended5mm` have no WRL pair. They
+  render without colour.
+- 8 footprints use `(scale 0.4)`. Correct value is 0.3937.
 
 ## Design rules
 
