@@ -1,7 +1,7 @@
 (footprint "Eurorack Power Header (10 pin)"
-	(version 20241229)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(descr "HIF3FC-10PA-2.54DSA(71)")
 	(tags "Connector")
@@ -55,6 +55,7 @@
 		)
 	)
 	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start -6.245046 -4.977655)
 		(end -6.245046 2.522345)
