@@ -1,7 +1,7 @@
 # Eurorack Common Library
 
 Shared foundations for the Eurorack projects: parts, design rules, and the
-values James has in stock.
+values held in stock.
 
 Every module project already pins this repo as a submodule at
 `hardware/shared`, so anything here is available to all of them without extra
@@ -58,8 +58,8 @@ loosen them.
 
 ## Preferred values
 
-`docs/preferred-values.md` lists the values James owns. Choose from it first. If
-a value is absent, choose SMD and buy it.
+`docs/preferred-values.md` lists the values held in stock. Choose from it
+first. If a value is absent, choose SMD and buy it.
 
 Regenerate the file when stock changes:
 
@@ -67,5 +67,5 @@ Regenerate the file when stock changes:
 PARTSBOX_KEY=$(cat ~/.tokens/partsbox) tools/partsbox-values.py
 ```
 
-PartsBox records which parts he owns, not how many. The file lists presence
-only. It holds most of what he owns, not all. Treat it as advice.
+PartsBox records which parts are in stock, not how many. The file lists presence
+only. It holds most of the stock, not all. Treat it as advice.

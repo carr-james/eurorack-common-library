@@ -78,10 +78,10 @@ def render(resistors, capacitors, semiconductors, mechanical):
 
 Generated from PartsBox by `tools/partsbox-values.py`. Do not edit by hand.
 
-PartsBox records which parts James owns. It does not record how many. Stock
+PartsBox records which parts are in stock. It does not record how many. Stock
 counts there are not maintained, so this file lists presence only.
 
-The list holds most of what he owns, not all of it. A value that is absent may
+The list holds most of the stock, not all of it. A value that is absent may
 still exist. Treat the list as advice, not as a rule.
 
 ## How to choose
