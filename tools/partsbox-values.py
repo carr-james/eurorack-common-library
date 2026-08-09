@@ -91,9 +91,9 @@ still exist. Treat the list as advice, not as a rule.
 
 Passives are well stocked. If a passive value is here, use it freely.
 
-Semiconductors are not. A part here may be a single unit. Prototype with it, but
-standardise only on parts you can buy again. A shared design must use parts that
-other people can also buy.
+Semiconductors are not. A part here may be a single unit. Prototype with it. If
+you want to build the module more than once, check that you can buy the part
+again first.
 
 ## Resistors
 
