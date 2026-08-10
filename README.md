@@ -88,6 +88,33 @@ Scale down by **0.3937** (1/2.54), not 0.4. The 8 footprints that use 0.4 render
   render without colour.
 - 8 footprints use `(scale 0.4)`. Correct value is 0.3937.
 
+## Surface mount passives
+
+| Symbol | Footprint | Pad gap |
+|---|---|---|
+| `R_0603` / `C_0603` | 0603, 1608 metric | 0.65mm to 0.85mm |
+| `R_0805` / `C_0805` | 0805, 2012 metric | 0.80mm to 0.90mm |
+| `R_1206` / `C_1206` | 1206, 3216 metric | 1.80mm |
+
+Value goes in the Value field. The symbol names the package, so one symbol
+covers every value in that size.
+
+**0805 is the default.** It solders by hand, suits a stencil, and leaves a wide
+margin against the mill.
+
+### Why 0402 is not here
+
+The pad gap is 0.40mm for a capacitor and 0.48mm for a resistor. A 0.2mm
+isolation bit leaves almost nothing either side, and the part is unpleasant to
+place by hand. Use 0603 when space is tight.
+
+### Plain footprints, not HandSolder
+
+The KiCad HandSolder variants extend the pads outward, so the gap between them
+does not change and milling is unaffected. The plain footprints match a stencil
+aperture better. Use the HandSolder variant only if you solder that part by hand
+and want the extra fillet room.
+
 ## Design rules
 
 `design-rules/house-mill.kicad_dru` holds the default rules. They target the
