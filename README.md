@@ -104,9 +104,27 @@ margin against the mill.
 
 ### Why 0402 is not here
 
-The pad gap is 0.40mm for a capacitor and 0.48mm for a resistor. A 0.2mm
-isolation bit leaves almost nothing either side, and the part is unpleasant to
-place by hand. Use 0603 when space is tight.
+Not because it fails the mill rules. The gap is 0.40mm for a capacitor and
+0.48mm for a resistor, both above the 0.2mm minimum clearance.
+
+It is missing because a 0402 part is hard to place by hand and tombstones
+easily on a hotplate. Use 0603 when space is tight.
+
+## Surface mount packages
+
+| Footprint | Min pad gap | Use |
+|---|---|---|
+| `D_SOD-123` | 2.40mm | diodes, replaces DO-35 |
+| `SOIC-8` | 0.67mm | single and dual op-amps |
+| `SOIC-14` | 0.67mm | 14-pin CMOS, replaces DIP-14 |
+| `SOIC-16` | 0.67mm | 16-pin CMOS, replaces DIP-16 |
+| `SOT-23` | 0.40mm | transistors |
+| `SOT-23-5` | **0.35mm** | single op-amps |
+
+All clear the 0.2mm minimum clearance.
+
+**SOT-23-5 is the tightest thing here.** 0.35mm leaves 0.075mm either side of a
+0.2mm cut. Make a test cut before you commit a board that uses it.
 
 ### Plain footprints, not HandSolder
 
