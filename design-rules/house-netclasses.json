@@ -1,0 +1,26 @@
+{
+  "_comment": [
+    "House netclasses for milled boards. Paste into a project's .kicad_pro",
+    "under net_settings, or set them in Board Setup > Net Classes.",
+    "",
+    "Vias are 0.9mm with a 0.6mm hole to match house-mill.kicad_dru. Nothing is",
+    "plated at home, so every via is a rivet or a soldered wire and has to be",
+    "big enough to work by hand. KiCad's stock default of 0.6/0.3 fails the DRU.",
+    "",
+    "Track widths are set by what fits between pads, not by current. A 2.54mm",
+    "DIP pad grid leaves a 0.94mm gap, so 0.2mm clearance either side allows",
+    "0.54mm maximum. PWR at 0.45mm passes with margin. Signal current on these",
+    "modules is milliamps, so 0.25mm is already many times what is needed."
+  ],
+  "classes": [
+    { "name": "Default", "track_width": 0.25, "via_diameter": 0.9, "via_drill": 0.6, "clearance": 0.2 },
+    { "name": "PWR",     "track_width": 0.45, "via_diameter": 0.9, "via_drill": 0.6, "clearance": 0.2 },
+    { "name": "GND",     "track_width": 0.45, "via_diameter": 0.9, "via_drill": 0.6, "clearance": 0.2 }
+  ],
+  "netclass_patterns": [
+    { "netclass": "PWR", "pattern": "+5V" },
+    { "netclass": "PWR", "pattern": "+12VA" },
+    { "netclass": "PWR", "pattern": "-12VA" },
+    { "netclass": "GND", "pattern": "GND" }
+  ]
+}

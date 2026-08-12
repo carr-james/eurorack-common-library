@@ -151,6 +151,31 @@ Copy the file next to a board as `<project>.kicad_dru`. Raise the Board Setup
 minimums to match. Custom rules can tighten the built-in constraints but cannot
 loosen them.
 
+### Netclasses
+
+`design-rules/house-netclasses.json` holds the matching net classes. Set them
+and trace width stops being a per-track decision.
+
+| Class | Track | Via | Nets |
+|---|---|---|---|
+| Default | 0.25mm | 0.9 / 0.6mm | everything else |
+| PWR | 0.45mm | 0.9 / 0.6mm | `+5V`, `+12VA`, `-12VA` |
+| GND | 0.45mm | 0.9 / 0.6mm | `GND` |
+
+**KiCad's stock default via is 0.6mm with a 0.3mm hole, which fails the mill
+rules.** Nothing is plated at home, so a via is a rivet you set by hand and
+needs 0.9 / 0.6mm. A project that copies the DRU without the net classes will
+pass DRC until the first via is placed.
+
+Track width here is set by **what fits between pads, not by current**. A 2.54mm
+DIP grid with 1.6mm pads leaves 0.94mm, so 0.2mm clearance either side allows
+0.54mm maximum. Header pads of 1.7mm leave 0.84mm, allowing 0.44mm. PWR at
+0.45mm therefore passes between DIP pads but not between header pads, which is
+the right trade: you route power away from a connector, not through it.
+
+Current is not the constraint. These modules draw milliamps, and 0.25mm of
+35um copper carries about an amp.
+
 ## Preferred values
 
 `docs/preferred-values.md` lists the values held in stock. Choose from it
