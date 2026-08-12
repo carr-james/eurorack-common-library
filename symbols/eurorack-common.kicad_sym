@@ -14546,7 +14546,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Conn_02x10_Odd_Even"
+	(symbol "Conn_01x14"
 		(pin_names
 			(offset 1.016)
 			(hide yes)
@@ -14557,7 +14557,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "J"
-			(at 1.27 12.7 0)
+			(at 0 17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14566,8 +14566,8 @@
 				)
 			)
 		)
-		(property "Value" "Conn_02x10_Odd_Even"
-			(at 1.27 -15.24 0)
+		(property "Value" "Conn_01x14"
+			(at 0 -20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14576,7 +14576,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Eurorack Common:IDC-Header_2x10_P2.54mm_Vertical"
+		(property "Footprint" "Eurorack Common:PinSocket_1x14_P2.54mm_Vertical"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14598,7 +14598,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, 2x10, odd/even numbering. Shrouded IDC for board to board ribbon"
+		(property "Description" "Generic connector, 1x14, 2.54mm. Socket on the main board, pin header on the stacked board"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14620,7 +14620,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "IDC?Header*2x10*"
+		(property "ki_fp_filters" "Pin?Header*1x14* PinSocket*1x14*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14631,16 +14631,38 @@
 				)
 			)
 		)
-		(symbol "Conn_02x10_Odd_Even_1_1"
+		(symbol "Conn_01x14_1_1"
 			(rectangle
-				(start -1.27 11.43)
-				(end 3.81 -13.97)
+				(start -1.27 16.51)
+				(end 1.27 -19.05)
 				(stroke
 					(width 0.254)
 					(type default)
 				)
 				(fill
 					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 15.367)
+				(end 0 15.113)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 12.827)
+				(end 0 12.573)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
 				)
 			)
 			(rectangle
@@ -14754,8 +14776,8 @@
 				)
 			)
 			(rectangle
-				(start 3.81 10.287)
-				(end 2.54 10.033)
+				(start -1.27 -15.113)
+				(end 0 -15.367)
 				(stroke
 					(width 0.1524)
 					(type default)
@@ -14765,96 +14787,8 @@
 				)
 			)
 			(rectangle
-				(start 3.81 7.747)
-				(end 2.54 7.493)
-				(stroke
-					(width 0.1524)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(rectangle
-				(start 3.81 5.207)
-				(end 2.54 4.953)
-				(stroke
-					(width 0.1524)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(rectangle
-				(start 3.81 2.667)
-				(end 2.54 2.413)
-				(stroke
-					(width 0.1524)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(rectangle
-				(start 3.81 0.127)
-				(end 2.54 -0.127)
-				(stroke
-					(width 0.1524)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(rectangle
-				(start 3.81 -2.413)
-				(end 2.54 -2.667)
-				(stroke
-					(width 0.1524)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(rectangle
-				(start 3.81 -4.953)
-				(end 2.54 -5.207)
-				(stroke
-					(width 0.1524)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(rectangle
-				(start 3.81 -7.493)
-				(end 2.54 -7.747)
-				(stroke
-					(width 0.1524)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(rectangle
-				(start 3.81 -10.033)
-				(end 2.54 -10.287)
-				(stroke
-					(width 0.1524)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(rectangle
-				(start 3.81 -12.573)
-				(end 2.54 -12.827)
+				(start -1.27 -17.653)
+				(end 0 -17.907)
 				(stroke
 					(width 0.1524)
 					(type default)
@@ -14864,7 +14798,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 10.16 0)
+				(at -5.08 15.24 0)
 				(length 3.81)
 				(name "Pin_1"
 					(effects
@@ -14882,7 +14816,7 @@
 				)
 			)
 			(pin passive line
-				(at 7.62 10.16 180)
+				(at -5.08 12.7 0)
 				(length 3.81)
 				(name "Pin_2"
 					(effects
@@ -14900,7 +14834,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 7.62 0)
+				(at -5.08 10.16 0)
 				(length 3.81)
 				(name "Pin_3"
 					(effects
@@ -14918,7 +14852,7 @@
 				)
 			)
 			(pin passive line
-				(at 7.62 7.62 180)
+				(at -5.08 7.62 0)
 				(length 3.81)
 				(name "Pin_4"
 					(effects
@@ -14954,7 +14888,7 @@
 				)
 			)
 			(pin passive line
-				(at 7.62 5.08 180)
+				(at -5.08 2.54 0)
 				(length 3.81)
 				(name "Pin_6"
 					(effects
@@ -14972,7 +14906,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 2.54 0)
+				(at -5.08 0 0)
 				(length 3.81)
 				(name "Pin_7"
 					(effects
@@ -14990,7 +14924,7 @@
 				)
 			)
 			(pin passive line
-				(at 7.62 2.54 180)
+				(at -5.08 -2.54 0)
 				(length 3.81)
 				(name "Pin_8"
 					(effects
@@ -15008,7 +14942,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 0 0)
+				(at -5.08 -5.08 0)
 				(length 3.81)
 				(name "Pin_9"
 					(effects
@@ -15026,7 +14960,7 @@
 				)
 			)
 			(pin passive line
-				(at 7.62 0 180)
+				(at -5.08 -7.62 0)
 				(length 3.81)
 				(name "Pin_10"
 					(effects
@@ -15044,7 +14978,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -2.54 0)
+				(at -5.08 -10.16 0)
 				(length 3.81)
 				(name "Pin_11"
 					(effects
@@ -15062,7 +14996,7 @@
 				)
 			)
 			(pin passive line
-				(at 7.62 -2.54 180)
+				(at -5.08 -12.7 0)
 				(length 3.81)
 				(name "Pin_12"
 					(effects
@@ -15080,7 +15014,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -5.08 0)
+				(at -5.08 -15.24 0)
 				(length 3.81)
 				(name "Pin_13"
 					(effects
@@ -15098,7 +15032,7 @@
 				)
 			)
 			(pin passive line
-				(at 7.62 -5.08 180)
+				(at -5.08 -17.78 0)
 				(length 3.81)
 				(name "Pin_14"
 					(effects
@@ -15108,114 +15042,6 @@
 					)
 				)
 				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -5.08 -7.62 0)
-				(length 3.81)
-				(name "Pin_15"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "15"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 7.62 -7.62 180)
-				(length 3.81)
-				(name "Pin_16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -5.08 -10.16 0)
-				(length 3.81)
-				(name "Pin_17"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "17"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 7.62 -10.16 180)
-				(length 3.81)
-				(name "Pin_18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -5.08 -12.7 0)
-				(length 3.81)
-				(name "Pin_19"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "19"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 7.62 -12.7 180)
-				(length 3.81)
-				(name "Pin_20"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "20"
 					(effects
 						(font
 							(size 1.27 1.27)
